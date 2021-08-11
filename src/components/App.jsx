@@ -3,7 +3,7 @@ import './App.css';
 import TitleBar from './TitleBar/TitleBar';
 import BookViewer from './BookViewer/BookViewer';
 import Footer from './Footer/Footer'
-import CreateBook from './CreateBook/CreateBook';
+import BookCreator from './BookCreator/BookCreator';
 
 class App extends Component {
   constructor(props) {
@@ -47,8 +47,8 @@ class App extends Component {
       <div className='container-fluid'>
         <TitleBar />
         <BookViewer book={this.books[this.state.bookNumber]} nextBook={this.goToNextBook} previousBook={this.goToPreviousBook} />
+        <BookCreator />
         <Footer />
-        <CreateBook />
       </div>
     );
   }
